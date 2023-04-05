@@ -79,7 +79,7 @@ namespace Kelompok21_SS1_B
                                                     }
                                                 }
                                                 break;
-                                            case '3':
+                                            case '4':
                                                 conn.Close();
                                                 return;
                                             default:
@@ -115,7 +115,7 @@ namespace Kelompok21_SS1_B
         }
         public void baca(SqlConnection con)
         {
-            SqlCommand cmd = new SqlCommand("Select * From HRD.Mahasiswa", con);
+            SqlCommand cmd = new SqlCommand("Select * From Mahasiswa", con);
             SqlDataReader r = cmd.ExecuteReader();
             while (r.Read())
             {
